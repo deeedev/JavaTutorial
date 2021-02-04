@@ -5,20 +5,18 @@ public class MathOperation {
 	private int a;
 	private int b;
 	
-	//Getter
 	public int getA() {
 		return a;
 	}
-	
+
+	public void setA(int a) {
+		this.a = a;
+	}
+
 	public int getB() {
 		return b;
 	}
-	
-	//Setter
-	public void setA(int num) {
-		this.a = num;
-	}
-	
+
 	public void setB(int num) {
 		if(num <= 0) {
 			System.out.println("Please Enter Number greater than Zero");
@@ -30,6 +28,7 @@ public class MathOperation {
 	//Constructor is a method which get executed first when you create the object/Instance of the class
 	//To create the oject of the class. To instantiate the intstance variable of the class.
 		
+
 	public void AirtmaticOperation() {
 		int sum = a+b;
 		int multiply = a*b;
