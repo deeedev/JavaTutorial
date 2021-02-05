@@ -1,9 +1,19 @@
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class MathOperation {
 	//Instance Variable
+	
+	BufferedReader sb = new BufferedReader(new InputStreamReader(System.in));
 	private int a;
 	private int b;
+	int randomNumber;
+	public MathOperation() throws NumberFormatException, IOException {
+		System.out.println("Enter the Random Number:");
+		this.randomNumber = Integer.parseInt(sb.readLine());
+		System.out.println("Rnadom Number:" +randomNumber);
+	}
 	
 	public int getA() {
 		return a;
